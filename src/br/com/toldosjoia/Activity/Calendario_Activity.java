@@ -37,7 +37,7 @@ public class Calendario_Activity extends Activity implements OnDispatchDateSelec
         data= (TextView)findViewById(R.id.dia_selecionado);
         banco_local = new Operacoes_no_banco_local(this);
         Formato = new SimpleDateFormat("EEEE d MMMM yyyy");
-   
+        int testefork;
         
         ((calendarioView) findViewById(R.id.calendar)).setOnDispatchDateSelectListener(this);
         evento_data(new Date());
