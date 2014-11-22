@@ -1,171 +1,73 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     android:layout_marginLeft="50dp"
+     >
+     <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:paddingRight="40dp"
+        android:layout_height="wrap_content"
+  
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/textViewCobertura"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewCoberturaServico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrega"
+                         android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="#000" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="22dp"
+         android:layout_marginTop="24dp"
+         android:text="Tipo de Serviço"
+         android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutVisitaOUentrega"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cobertura / Fechamento"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:gravity="center" 
-        android:textColor="#000000" 
-        android:paddingTop="20dp"
-        android:paddingBottom="30dp"/>
-  <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Material: "
-       android:textColor="#000000" />
-   <TextView 
-       android:id="@+id/textViewCoberturaMaterial"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="xxxxxxxxx"
-       android:textColor="#000000"
-       android:paddingRight="40dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Cor: "
-       android:textColor="#000000" />
-   <TextView 
-        android:id="@+id/textViewCoberturaMaterialCor"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Verde"
-       android:textColor="#000000"/>
-  </LinearLayout>
-    <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Modelo Bamb: "
-       android:textColor="#000000" />
-   <TextView 
-       android:id="@+id/textViewCoberturaModeloBamb"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="xxxxxxxxx"
-       android:textColor="#000000"
-       android:paddingRight="30dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Debrum Cor: "
-       android:textColor="#000000" />
-   <TextView 
-        android:id="@+id/textViewCoberturaModeloBambCor"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Verde"
-       android:textColor="#000000"/>
-  </LinearLayout>
-      <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Estrutura: "
-       android:textColor="#000000" />
-   <TextView 
-       android:id="@+id/textViewCoberturaEstrutura"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="xxxxxxxxx"
-       android:textColor="#000000"
-       android:paddingRight="30dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Cor: "
-       android:textColor="#000000" />
-   <TextView 
-        android:id="@+id/textViewCoberturaEstruturaCor"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Verde"
-       android:textColor="#000000"
-       android:paddingBottom="30dp"/>
-  </LinearLayout>
-    <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Modelo: "
-       android:textColor="#000000" />
-   <TextView 
-       android:id="@+id/textViewCoberturaModelo"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="xxxxxxxxx"
-       android:textColor="#000000"
-       android:paddingRight="30dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Quantidade: "
-       android:textColor="#000000" />
-   <TextView 
-        android:id="@+id/textViewCoberturaModeloQuantidade"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="1"
-       android:textColor="#000000"/>
-  </LinearLayout>
-      <LinearLayout 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal" >
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Largura: "
-       android:textColor="#000000" />
-   <TextView 
-       android:id="@+id/textViewCoberturaModeloLargura"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="3.00"
-       android:textColor="#000000"
-       android:paddingRight="20dp"/>
-   <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Avanço: "
-       android:textColor="#000000" />
-   <TextView 
-        android:id="@+id/textViewCoberturaModeloAvanco"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="200"
-       android:textColor="#000000"
-       android:paddingRight="20dp"/>
-      <TextView
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Caida: "
-       android:textColor="#000000" />
-   <TextView 
-        android:id="@+id/textViewCoberturaModeloCaida"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="RD"
-       android:textColor="#000000"/>
-   
-  </LinearLayout>
-</LinearLayout>
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="14dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayoutVisitaOUentrega"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LinearLayoutVisitaOUentrega"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingRight="40dp" >
+
+        </LinearLayout>
+                                       
+ </RelativeLayout>
+        

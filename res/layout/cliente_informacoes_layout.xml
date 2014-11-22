@@ -2,18 +2,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-                                           
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/logo_site13" />
-
-
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -42,16 +30,6 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_below="@+id/imageView1"
-        android:layout_marginTop="26dp"
-        android:text="Cliente "
-        android:textColor="#000" />
 
     <TextView
         android:id="@+id/textView2"
@@ -181,7 +159,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignLeft="@+id/textView4"
-                            android:layout_centerVertical="true"
+                            android:layout_below="@+id/textView4"
+                              android:layout_marginTop="16dp"
                             android:text="N°" 
                             android:textColor="#000" />
                            <LinearLayout
@@ -382,7 +361,7 @@
                                android:layout_alignTop="@+id/linearLayoutEstado"
                                android:layout_centerHorizontal="true"
                                android:text="Cep" />
-                                       <LinearLayout
+                  <LinearLayout
             android:id="@+id/linearLayoutCep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -412,7 +391,56 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-   
 
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_below="@+id/textView9"
+            android:layout_marginTop="14dp"
+            android:textColor="#000"
+            android:text="Referencia" />
+                          <LinearLayout
+            android:id="@+id/linearLayoutReferencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="40dp"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_toRightOf="@+id/textView11"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewClienteReferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="estação de trem"
+                    android:paddingLeft="5dp"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+                          <TextView
+                              android:id="@+id/textView1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentLeft="true"
+                              android:layout_alignParentTop="true"
+                              android:layout_marginLeft="50dp"
+                              android:layout_marginTop="24dp"
+                              android:text="Cliente "
+                              android:textColor="#000" />
 
 </RelativeLayout>

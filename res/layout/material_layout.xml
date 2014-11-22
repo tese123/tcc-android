@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >  
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estrutura"
+                 android:textColor="#000" />
+          
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewEstrutura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbono"
+                android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="#000" />
+         </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >  
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cor"
+           android:textColor="#000"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewCor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branco"
+                android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="#000" >
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+       
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >  
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modelo"
+                 android:textColor="#000"/>
+          
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewModelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meia lua"
+                android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="#000" >
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="15dp" >  
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tamanho"
+                 android:textColor="#000"/>
+          
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewTamanho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3,00"
+                android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:background="#000" >
+            </LinearLayout>
+            </LinearLayout>
+            
+                    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Largura"
+                android:paddingLeft="5dp"
+                 android:textColor="#000"/>
+             <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewLargura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,00"
+                android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="1dp"
+                android:background="#000" >
+            </LinearLayout>
+        </LinearLayout> 
+                       <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H1"
+                android:paddingLeft="5dp"
+                 android:textColor="#000" />
+          
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewH1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RD"
+                android:paddingLeft="5dp"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="#000" />
+         </LinearLayout>    
+        </LinearLayout>
+        
+
+        
+</LinearLayout>

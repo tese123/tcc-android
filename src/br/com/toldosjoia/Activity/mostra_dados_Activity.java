@@ -14,6 +14,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class mostra_dados_Activity extends Activity implements OnPageChangeListener {
@@ -23,6 +25,8 @@ public class mostra_dados_Activity extends Activity implements OnPageChangeListe
 	  Pedidos pedido;
 	  ArrayList<material> material = new ArrayList<material>();
 	  ArrayList<modelo> modelo = new ArrayList<modelo>();
+	  LinearLayout ll;
+	  LinearLayout ll2;
       Operacoes_no_banco_local banco_local = new Operacoes_no_banco_local(this);
 	   public void onCreate(Bundle savedInstanceState){
             	   super.onCreate(savedInstanceState);
@@ -74,11 +78,19 @@ public class mostra_dados_Activity extends Activity implements OnPageChangeListe
 		}*/
 	}
 	public void inserir_informacoes_do_material(){
+		if(ll == null){
+		ll = (LinearLayout) findViewById(R.id.LinearLayoutVisitaOUentrega);
+		LayoutInflater Inflater = LayoutInflater.from(this);
+		Inflater.inflate(R.layout.entrega_layout, ll);
+		
+		ll2 = (LinearLayout) findViewById(R.id.LinearLayoutMaterial);
+		Inflater.inflate(R.layout.material_layout, ll2);
+		}
 		if(material.size() > 0 && modelo.size() > 0){
-		((TextView)(findViewById(R.id.textViewCoberturaEstrutura))).setText(material.get(0).getEstrutura());
+		/*((TextView)(findViewById(R.id.textViewCoberturaEstrutura))).setText(material.get(0).getEstrutura());
 		((TextView)(findViewById(R.id.textViewCoberturaEstruturaCor))).setText(material.get(0).getCor());
 		((TextView)(findViewById(R.id.textViewCoberturaMaterialCor))).setText(material.get(0).getBabado());
-		((TextView)(findViewById(R.id.textViewCoberturaModelo))).setText(modelo.get(0).getNome());
+		((TextView)(findViewById(R.id.textViewCoberturaModelo))).setText(modelo.get(0).getNome());*/
 		}
 		
 	}

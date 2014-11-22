@@ -45,7 +45,7 @@ public class mostrar_dados_paginaAdapter extends PagerAdapter{
 		// TODO Auto-generated method stub
 		((ViewPager) container).addView(viewList.get(position));
 		if(position == 0)mostrar.inserir_informacoes_do_cliente();
-
+        if(position == 1)mostrar.inserir_informacoes_do_material();
 		return viewList.get(position);
 		
 	}
