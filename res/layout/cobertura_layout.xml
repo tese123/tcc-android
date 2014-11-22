@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textViewCobertura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cobertura / Fechamento"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center" 
+        android:textColor="#000000" 
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"/>
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Material: "
+       android:textColor="#000000" />
+   <TextView 
+       android:id="@+id/textViewCoberturaMaterial"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="xxxxxxxxx"
+       android:textColor="#000000"
+       android:paddingRight="40dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Cor: "
+       android:textColor="#000000" />
+   <TextView 
+        android:id="@+id/textViewCoberturaMaterialCor"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Verde"
+       android:textColor="#000000"/>
+  </LinearLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Modelo Bamb: "
+       android:textColor="#000000" />
+   <TextView 
+       android:id="@+id/textViewCoberturaModeloBamb"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="xxxxxxxxx"
+       android:textColor="#000000"
+       android:paddingRight="30dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Debrum Cor: "
+       android:textColor="#000000" />
+   <TextView 
+        android:id="@+id/textViewCoberturaModeloBambCor"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Verde"
+       android:textColor="#000000"/>
+  </LinearLayout>
+      <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Estrutura: "
+       android:textColor="#000000" />
+   <TextView 
+       android:id="@+id/textViewCoberturaEstrutura"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="xxxxxxxxx"
+       android:textColor="#000000"
+       android:paddingRight="30dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Cor: "
+       android:textColor="#000000" />
+   <TextView 
+        android:id="@+id/textViewCoberturaEstruturaCor"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Verde"
+       android:textColor="#000000"
+       android:paddingBottom="30dp"/>
+  </LinearLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Modelo: "
+       android:textColor="#000000" />
+   <TextView 
+       android:id="@+id/textViewCoberturaModelo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="xxxxxxxxx"
+       android:textColor="#000000"
+       android:paddingRight="30dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Quantidade: "
+       android:textColor="#000000" />
+   <TextView 
+        android:id="@+id/textViewCoberturaModeloQuantidade"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="1"
+       android:textColor="#000000"/>
+  </LinearLayout>
+      <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Largura: "
+       android:textColor="#000000" />
+   <TextView 
+       android:id="@+id/textViewCoberturaModeloLargura"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="3.00"
+       android:textColor="#000000"
+       android:paddingRight="20dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Avanço: "
+       android:textColor="#000000" />
+   <TextView 
+        android:id="@+id/textViewCoberturaModeloAvanco"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="200"
+       android:textColor="#000000"
+       android:paddingRight="20dp"/>
+      <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Caida: "
+       android:textColor="#000000" />
+   <TextView 
+        android:id="@+id/textViewCoberturaModeloCaida"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="RD"
+       android:textColor="#000000"/>
+   
+  </LinearLayout>
+</LinearLayout>

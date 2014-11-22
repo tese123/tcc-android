@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+     
+     <PreferenceCategory android:title="Banco de Dados"> 
+      		
+      	<Preference
+			android:title="Fazer Backup"
+			android:summary="salva as alterações do banco de dados no seu cartão sd"
+			android:key="fazer backup" />
+      	
+      	<Preference
+			android:title="Carregar Backup"
+			android:summary="Carrega backup do banco de dados no seu cartão sd"
+			android:key="carregar backup" />
+      	
+      	<Preference
+			android:title="Deletar Banco de Dados"
+			android:summary="Apaga o banco de dados de forma permanente"
+			android:key="deletar banco" />
+</PreferenceCategory>
+     <EditTextPreference
+             android:title="Servidor"
+			
+			android:key="deletar banco"  />
+  
+</PreferenceScreen>

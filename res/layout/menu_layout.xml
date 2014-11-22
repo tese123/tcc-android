@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaa" >
+     
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:background="#fff3f3f3"
+        android:orientation="horizontal"
+        android:paddingLeft="21dp"
+        android:paddingTop="12dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/textViewAgendaMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Agenda"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#888" />
+
+            <ImageView
+                android:id="@+id/scroll_1"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@drawable/view_pager_scroll" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/textViewContatosMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Contatos"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#888" />
+
+            <ImageView
+                android:id="@+id/scroll_2"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@drawable/view_pager_scroll"
+                android:visibility="invisible" />
+        </LinearLayout>
+        
+                <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/textViewMapaMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mapa"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#888" />
+
+            <ImageView
+                android:id="@+id/scroll_3"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@drawable/view_pager_scroll"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/textViewConfiguracoesMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Configurações"
+                android:textAppearance="?android:attr/textAppearance"
+                android:textColor="#888" />
+
+            <ImageView
+                android:id="@+id/scroll_4"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:background="@drawable/view_pager_scroll"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

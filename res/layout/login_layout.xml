@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <CheckBox
+        android:id="@+id/checkBoxEntrarAuto"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonEntrar"
+        android:layout_alignLeft="@+id/EditTextSenha"
+        android:layout_marginBottom="5dp"
+        android:text="Entrar Automaticamente"
+        android:textColor="#888" />
+
+    <EditText
+        android:id="@+id/EditTextSenha"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxEntrarAuto"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:onClick="ClickEditTextSenha"
+        android:text="Senha"
+        android:textColor="#888" />
+
+    <EditText
+        android:id="@+id/EditTextNome"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="ClickEditTextUsuario"
+        android:text="Usuário"
+        android:textColor="#888" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/checkBoxEntrarAuto"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="#1E90FF"
+        android:onClick="Entrar"
+        android:text="@string/entrar"
+        android:textSize="18dp"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#DCDCDC" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/ic_avatar" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/EditTextNome"
+        android:layout_alignLeft="@+id/EditTextNome"
+        android:layout_marginBottom="12dp"
+        android:text="Precisa de ajuda?"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+</RelativeLayout>

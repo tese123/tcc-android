@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">TCC</string>
+    <string name="agendaVisita">Agenda de Visita</string>
+    <string name="nome">Nome:</string>
+    <string name="senha">Senha:</string>
+    <string name="entrar">Entrar</string>
+
+</resources>

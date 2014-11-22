@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/textViewContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:drawableTop="@drawable/ic_contatos"
+        android:onClick="abrir_Contato"
+        android:textColor="#696969"
+        android:text="Contatos"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorLink="@android:color/holo_blue_dark" />
+
+</RelativeLayout>
