@@ -22,8 +22,9 @@ import br.com.toldosjoia.dados.Pedidos;
 public class Calendario_Activity extends Activity implements OnDispatchDateSelectListener, OnClickListener{
 	private TextView 			data;
 	private SimpleDateFormat 	Formato;
-	private ArrayList<Pedidos> pedidos = new ArrayList<Pedidos>();
 	private ArrayList<Cliente> cliente = new ArrayList<Cliente>();
+    private ArrayList<Pedidos> pedidos = new ArrayList<Pedidos>();
+
 	private LinearLayout hora;
 	private Operacoes_no_banco_local banco_local;
 
@@ -49,8 +50,9 @@ public class Calendario_Activity extends Activity implements OnDispatchDateSelec
 		this.data.setText(Formato.format(data));
 		    hora.removeAllViews();
 		    cliente.removeAll(cliente);
-		    pedidos.removeAll(pedidos);
+			pedidos.removeAll(pedidos);
 	    	banco_local.getClientePorData(pedidos,cliente,data);
+	    	
 	   
 	     
 			for(int x = 0; x < pedidos.size();x++){
@@ -63,6 +65,9 @@ public class Calendario_Activity extends Activity implements OnDispatchDateSelec
 		    ((TextView)((LinearLayout)hora.getChildAt(x)).findViewById(R.id.textViewPedido)).setText(cliente.get(x).getCidade());
 		    ((TextView)((LinearLayout)hora.getChildAt(x)).findViewById(R.id.textViewPedidoHora)).setText(pedidos.get(x).getIr_hora().substring(0,5));
 			
+		    ((LinearLayout)hora.getChildAt(x)).setId(x);
+		    ((LinearLayout)hora.getChildAt(x)).setOnClickListener(this);
+		    
 		    ((LinearLayout)hora.getChildAt(x)).setId(x);
 		    ((LinearLayout)hora.getChildAt(x)).setOnClickListener(this);
 		    

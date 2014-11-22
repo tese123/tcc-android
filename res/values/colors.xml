@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-        <item name="dimGray" type="color">#696969</item>
+        <item name="customgray" type="color">#888</item>
+        <item name="customGrayCalendar" type="color">#C0C0C0</item>
+        <item name="hilight" type="color">#1E90FF</item>
+        <item name="white" type="color">#ffffff</item>
 </resources>

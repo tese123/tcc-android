@@ -58,4 +58,5 @@ public class iconeTextoListAdapter extends BaseAdapter {
 		return textViewTexto;
 	}
 
+
 }

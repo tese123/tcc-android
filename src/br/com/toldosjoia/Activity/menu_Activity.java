@@ -64,10 +64,11 @@ public class menu_Activity extends Activity implements OnClickListener {
         mTextView3.setOnClickListener(this);
         mTextView4.setOnClickListener(this);
  		this.setTitle(usuario.getUsuario());
+ 		this.setTitleColor(getResources().getColor(R.color.customgray));
  		
  		banco_local = new Operacoes_no_banco_local(this);
-    	
-    	this.getActionBar().setIcon(R.drawable.usuario);
+    	this.setTitleColor(getResources().getColor(R.color.customgray));
+       this.getActionBar().setIcon(R.drawable.ic_usuario_on);
  	   pager = (ViewPager) findViewById(R.id.pagina);
 	   pager.setAdapter(new MyPagerAdapter(this));
 	   pager.setOnPageChangeListener(new OnPageChangeListener() {
@@ -102,11 +103,11 @@ public class menu_Activity extends Activity implements OnClickListener {
 	    {
 	     case R.id.atualizarMenu:
 	    	         if(currentDB.exists())iniciar_Atualizacao(); 
-	    	         else Toast.makeText(this, "Sem banco de dados", Toast.LENGTH_SHORT).show();
+	    	         else Toast.makeText(this, "Banco de dados não encontrado", Toast.LENGTH_SHORT).show();
 	    	         return true;
 	     case R.id.desconectarMenu:
 	    	         if(currentDB.exists())desconectar();
-	    	         else Toast.makeText(this, "Sem banco de dados", Toast.LENGTH_SHORT).show();
+	    	         else Toast.makeText(this, "Banco de dados não encontrado", Toast.LENGTH_SHORT).show();
 	    	          
 	    	          return true;
 	     case R.id.sairMenu:
@@ -132,20 +133,20 @@ public class menu_Activity extends Activity implements OnClickListener {
 		if(position == 0)
 		mTextView1.setTextAppearance(this , android.R.style.TextAppearance_Medium);
 		else mTextView1.setTextAppearance(this, android.R.style.TextAppearance);
-		mTextView1.setTextColor(getResources().getColor(R.color.dimGray));
+		mTextView1.setTextColor(getResources().getColor(R.color.customgray));
 		
 		if(position == 1)
 			mTextView2.setTextAppearance(this , android.R.style.TextAppearance_Medium);
 		else mTextView2.setTextAppearance(this, android.R.style.TextAppearance);
-		mTextView2.setTextColor(getResources().getColor(R.color.dimGray));
+		mTextView2.setTextColor(getResources().getColor(R.color.customgray));
 		if(position == 2)
 			mTextView3.setTextAppearance(this , android.R.style.TextAppearance_Medium);
 		else mTextView3.setTextAppearance(this, android.R.style.TextAppearance);
-		mTextView3.setTextColor(getResources().getColor(R.color.dimGray));
+		mTextView3.setTextColor(getResources().getColor(R.color.customgray));
 		if(position == 3)
 		mTextView4.setTextAppearance(this , android.R.style.TextAppearance_Medium);
 		else mTextView4.setTextAppearance(this, android.R.style.TextAppearance);
-		mTextView4.setTextColor(getResources().getColor(R.color.dimGray));
+		mTextView4.setTextColor(getResources().getColor(R.color.customgray));
 	}
 	@Override
 	public void onClick(View v) {
@@ -170,12 +171,12 @@ public class menu_Activity extends Activity implements OnClickListener {
     public void abrir_Contato(View v){
     	if(currentDB.exists())
     	startActivity(new Intent(this,Contatos_Activity.class));
-    	else Toast.makeText(this, "Sem banco de dados", Toast.LENGTH_SHORT).show();
+    	else Toast.makeText(this, "Banco de dados não encontrado", Toast.LENGTH_SHORT).show();
     }
     public void abrir_Mapa(View v){
     	if(currentDB.exists())
     	startActivity(new Intent(this,Mapa_Activity.class));
-    	else Toast.makeText(this, "Sem banco de dados", Toast.LENGTH_SHORT).show();
+    	else Toast.makeText(this, "Banco de dados não encontrado", Toast.LENGTH_SHORT).show();
     }
     public void desconectar()
     {
@@ -189,7 +190,7 @@ public class menu_Activity extends Activity implements OnClickListener {
     public void abrir_Agenda(View v){
     	if(currentDB.exists())
     	startActivity(new Intent(this,Calendario_Activity.class));
-    	else Toast.makeText(this, "Sem banco de dados", Toast.LENGTH_SHORT).show();
+    	else Toast.makeText(this, "Banco de dados não encontrado", Toast.LENGTH_SHORT).show();
     }
     public void abrir_Configuracoes(View v){
     
@@ -198,7 +199,7 @@ public class menu_Activity extends Activity implements OnClickListener {
     }
     private void atualizar() 
     {
-        try{
+         try{
     	String dataEhoraAtual;
     	
     	dataEhoraAtual = banco_local.getUltima_Atualizacao();

@@ -3,53 +3,87 @@
     android:id="@+id/rela"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:background="#F5F5F5"
+    android:orientation="vertical" 
+    android:layout_gravity="center">
 
-    <LinearLayout 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        
-    </LinearLayout>
-    <LinearLayout
+    <AbsoluteLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_weight="0.48"
+        android:background="#f5f5f5" >
+
+        <TextView
+            android:id="@+id/textViewPedido"
+            android:layout_width="310dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="26dp"
+            android:layout_x="6dp"
+            android:layout_y="43dp"
+            android:background="@drawable/ic_borda_informacoes"
+            android:gravity="center_horizontal"
+            android:paddingLeft="0dp"
+            android:paddingRight="220dp"
+            android:paddingTop="16dp"
+            android:text="Pedido"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/customgray" />
+
+        <LinearLayout
+            android:layout_width="282dp"
+            android:layout_height="1dp"
+            android:layout_x="16dp"
+            android:layout_y="49dp"
+            android:background="#dcdcdc"
+            android:gravity="center_horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPedidoNome"
+            android:layout_width="310dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="119dp"
+            android:layout_x="6dp"
+            android:layout_y="5dp"
+            android:background="@drawable/ic_borda_informacoes"
+            android:gravity="center_horizontal"
+            android:paddingRight="100dp"
+            android:paddingTop="10dp"
+            android:text="Nome"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/customgray" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="54dp"
+            android:layout_height="37dp"
+            android:layout_x="20dp"
+            android:layout_y="5dp"
+            android:src="@drawable/ic_avatar_informacoes" />
 
         <TextView
             android:id="@+id/textViewPedidoHora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_x="24dp"
+            android:layout_y="92dp"
             android:paddingRight="40dp"
-            android:text="hora" />
+            android:text="hora"
+            android:textColor="@color/customgray"
+            android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/textViewPedidoNome"
+            android:id="@+id/textViewPedidoTipo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_marginBottom="48dp"
+            android:layout_x="167dp"
+            android:layout_y="57dp"
+            android:text="Tipo"
+            android:textColor="@color/customgray"
+            android:textSize="18sp" />
 
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewPedidoTipo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo" />
-
-    <TextView
-        android:id="@+id/textViewPedido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pedido"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_gravity="center"
-        android:layout_weight="0.00"
-        android:background="#000" >
-    </LinearLayout>
+    </AbsoluteLayout>
 
 </LinearLayout>

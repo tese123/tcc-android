@@ -2,12 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    android:background="#fff" >
 
-    
-     <br.com.toldosjoia.customView.fileListcarregar
+    <br.com.toldosjoia.customView.fileListcarregar
         android:id="@+id/filecarregar"
-        android:layout_width="fill_parent"
-        android:layout_height="200dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:background="#fff" >
+    </br.com.toldosjoia.customView.fileListcarregar>
+  
 
 </RelativeLayout>

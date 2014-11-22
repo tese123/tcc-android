@@ -52,7 +52,7 @@ public class calendarioView extends LinearLayout implements OnClickListener, OnI
 		semanas_caledario=(GridView) View_convetida.findViewById(R.id.calendario_semanas);
 		
 		semanas_caledario.setOnItemClickListener(this);
-		
+	
 		voltar = (Button) View_convetida.findViewById(R.id.Semana_anterior);
 		meses = (TextView) findViewById(R.id.calendar_month);
 		proximo = (Button) View_convetida.findViewById(R.id.Semana_proxima);
@@ -79,8 +79,11 @@ public class calendarioView extends LinearLayout implements OnClickListener, OnI
 	public void onItemClick(AdapterView<?> parent, View view,int position,
 			long id) {
 		// TODO Auto-generated method stub
-		clearBackground();
-		view.setBackgroundColor(Color.parseColor("#3A9CE9"));
+		clearBackground(null);
+		view.setBackgroundColor(Color.rgb(255, 255, 255));
+		view.setScrollBarStyle(getResources().getColor(R.color.customgray));
+		((TextView)((LinearLayout) view.findViewById(R.id.definirPropriedades)).getChildAt(0)).setTextColor(getResources().getColor(R.color.hilight));
+		((TextView)((LinearLayout) view.findViewById(R.id.definirPropriedades)).getChildAt(1)).setTextColor(getResources().getColor(R.color.hilight));
 		ListenerDataSelecionada.onDispatchDateSelect(semana[position]);		
 	}
 	@Override
@@ -104,7 +107,7 @@ public class calendarioView extends LinearLayout implements OnClickListener, OnI
 		}
 		calendarioadapter.notifyDataSetChanged();
 		Mes_Selecionado();
-		clearBackground();
+		clearBackground(null);
 	}
 	private void SemanaAnterior()
 	{
@@ -117,14 +120,18 @@ public class calendarioView extends LinearLayout implements OnClickListener, OnI
 		 calendarioadapter.notifyDataSetChanged();
 		 Mes_Selecionado();
 
-		 clearBackground();
+		 clearBackground(null);
 	}
-	private void clearBackground()
+	private void clearBackground(View view)
 	{
 		for(int i=0;i<semanas_caledario.getCount();i++)
 		{
 			semanas_caledario.getChildAt(i).setBackgroundColor(Color.TRANSPARENT);
+			((TextView)((LinearLayout)semanas_caledario.getChildAt(i).findViewById(R.id.definirPropriedades)).getChildAt(0)).setTextColor(getResources().getColor(R.color.white));
+			((TextView)((LinearLayout)semanas_caledario.getChildAt(i).findViewById(R.id.definirPropriedades)).getChildAt(1)).setTextColor(getResources().getColor(R.color.white));
 		}
+		
+		
 	}
 	private void Mes_Selecionado()
 	{

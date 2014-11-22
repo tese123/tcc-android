@@ -5,7 +5,7 @@
       		
       	<Preference
 			android:title="Fazer Backup"
-			android:summary="salva as alterações do banco de dados no seu cartão sd"
+			android:summary="Salva as alterações do banco de dados no seu cartão sd"
 			android:key="fazer backup" />
       	
       	<Preference
@@ -18,9 +18,4 @@
 			android:summary="Apaga o banco de dados de forma permanente"
 			android:key="deletar banco" />
 </PreferenceCategory>
-     <EditTextPreference
-             android:title="Servidor"
-			
-			android:key="deletar banco"  />
-  
 </PreferenceScreen>

@@ -59,16 +59,22 @@
                <activity android:name="br.com.toldosjoia.Activity.Calendario_Activity"
                    android:screenOrientation="portrait"/>
                <activity android:name="br.com.toldosjoia.Activity.Login_Activity"
-                   android:theme="@android:style/Theme.Black.NoTitleBar"
-                   android:screenOrientation="portrait"/>
+                   
+                   android:screenOrientation="portrait"
+                    android:theme="@style/MenuTheme"/>
                <activity android:name="br.com.toldosjoia.Activity.menu_Activity"
-                   android:screenOrientation="portrait"/>
+                   android:screenOrientation="portrait"
+                    android:theme="@style/MenuTheme"/>
                <activity android:name="br.com.toldosjoia.Activity.Contatos_Activity"
-                   android:screenOrientation="portrait"/>
+                   android:screenOrientation="portrait"
+                   android:theme="@style/ContactsActivityTheme"
+                   android:icon="@drawable/ic_action_previous_item"
+                   android:label="Contatos"/>
                <activity android:name="br.com.toldosjoia.Activity.Mapa_Activity"
-                   android:screenOrientation="portrait"/>
+                   android:screenOrientation="landscape"/>
                <activity android:name="br.com.toldosjoia.Activity.Configuracao_Activity"
-                   android:screenOrientation="portrait"/>
+                   android:screenOrientation="portrait"
+                   android:theme="@style/MenuTheme"/>
                <activity android:name="br.com.toldosjoia.Activity.mostra_dados_Activity"
                          android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"
                          android:screenOrientation="portrait"/>
@@ -76,7 +82,7 @@
                          android:theme="@android:style/Theme.Dialog"
                          android:screenOrientation="portrait"/>
              <activity android:name="br.com.toldosjoia.ActivityDialog.carregar_backup_dialog"
-                         android:theme="@android:style/Theme.Dialog"
+                         android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar"
                          android:screenOrientation="portrait"/>
               <activity android:name="br.com.toldosjoia.ActivityDialog.Contatos_Dialog"
                             android:theme="@android:style/Theme.Dialog"

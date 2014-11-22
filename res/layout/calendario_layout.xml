@@ -7,17 +7,22 @@
     <br.com.toldosjoia.customView.calendarioView
         android:id="@+id/calendar"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#1E90FF"/>
 
     <TextView
         android:id="@+id/dia_selecionado"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:background="@drawable/ic_borda_calendario"
+        android:layout_gravity="center"
+        android:textColor="#fff"/>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="#dcdcdc" >
 
       <LinearLayout
           android:id="@+id/line"

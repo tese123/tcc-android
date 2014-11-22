@@ -10,19 +10,23 @@ import java.util.Collections;
 import java.util.List;
 
 import br.com.toldosjoia.R;
+import br.com.toldosjoia.Activity.TascaramAMaoNaGoiaba;
 import br.com.toldosjoia.ActivityDialog.carregar_backup_dialog;
 import br.com.toldosjoia.banco_de_dados.Base_de_Dados;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Environment;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class fileListcarregar  extends ListView implements android.widget.AdapterView.OnItemClickListener{
@@ -34,6 +38,8 @@ public class fileListcarregar  extends ListView implements android.widget.Adapte
     public ProgressDialog progressBar;
     public boolean fimDathread = false;
     public iconeTextoListAdapter itla;
+    public static String caminho_banco;
+    
 	public fileListcarregar(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// TODO Auto-generated constructor stub
@@ -121,38 +127,19 @@ public class fileListcarregar  extends ListView implements android.widget.Adapte
 	public void onItemClick(AdapterView<?> parent, View view, int position,
 			long id) {
 		// TODO Auto-generated method stub
-		try {
-	        File data = Environment.getDataDirectory();
-	      
-	            String currentDBPath = "//data//br.com.toldosjoia//databases//Toldos";
-	          
-	            File currentDB = new File(data, currentDBPath);
-	            File backupDB = new File(vLista.get(position).getTexto());
-
-	            if (backupDB.exists()) {
-	            	SQLiteDatabase bd = database.getWritableDatabase();
-	                FileChannel src = new FileInputStream(backupDB).getChannel();
-	                FileChannel dst = new FileOutputStream(currentDB).getChannel();
-	                dst.transferFrom(src, 0, src.size());
-	                src.close();
-	                dst.close();
-	             
-	                bd.close();
-	                database.close();
-	                Toast.makeText(mContexto, "Carregado", Toast.LENGTH_SHORT).show();
-	                ((Activity)mContexto).finish();
-	                
-	                
-	            }
-	            else
-	            	Toast.makeText(mContexto, "Sem base de dados", Toast.LENGTH_SHORT).show();
-	       
-	    } catch (Exception e) {
-	    	Toast.makeText(mContexto, "erro", Toast.LENGTH_SHORT).show();
-	    }
-  
+		clearBackground(view);
+		TascaramAMaoNaGoiaba.caminho_backup = vLista.get(position).getTexto().toString(); 
+		view.setBackgroundColor(Color.rgb(220, 220, 220));
 		
 	}
+
+	private void clearBackground(View view)
+	{
+		
+		//for (int i = 0; i <  vLista.size(); i++)
+		//  ((View)((LinearLayout)vLista.get(i).getChildAt(i))).setTextColor(getResources().getColor(R.color.white));
+    }
+	
 	private void iniciar_Theread()
 	   {
 		   new Thread() {

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -10,11 +10,32 @@
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         -->
-    </style>
-
+    </style>  
+    
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+     <style name="NoActionBarTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <!-- Any customizations for your app running on 3.0+ devices here -->
+    </style>
+    
+    <style name="MenuTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- Any customizations for your app running on 3.0+ devices here -->
+        <item name="android:textColor">@color/customgray</item>
+    </style>
+    
+       <style name="CarregarBackupTheme" parent="@android:style/Theme.Dialog">
+        <!-- Any customizations for your app running on 3.0+ devices here -->
+        <item name="android:textColor">@color/white</item>
+    </style>
+       
+       <style name="ContactsActivityTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- Any customizations for your app running on 3.0+ devices here -->
+        
+        <item name="android:button">@drawable/ic_action_search</item>
+    </style>
 
 </resources>
+
